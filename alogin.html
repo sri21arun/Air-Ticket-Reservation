@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<style type="text/css">
+
+		body{
+			text-align: center;
+			font-family: verdana;
+                        background-image: url("this.jpg");
+						
+
+		}
+
+ <!-- fieldset{
+  
+  margin: 0 auto;
+  text-align: center;
+  float: center;
+  width: 400px;
+  height: 290px;
+border:1px solid #999;
+    border-radius:8px;
+    box-shadow:0 0 10px #999;x
+} 
+-->
+fieldset {
+    text-align: center;
+    border-radius: 10px;
+    background: #eee;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    position: relative;
+    border: 2px groove threedface;
+	
+}
+legend {
+    position: absolute;
+    top: -2px;
+    background: #fff;
+    padding: 10px 20px;
+    border: 2px groove threedface;
+    border-top: none;
+    box-shadow: inset 0 -5px 5px rgba(0,0,0,.2);
+    text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    font-weight: bold;
+}
+legend span {
+    display: block;
+    margin: -20px;
+    background: #fff;
+    padding: 0px 20px;
+}
+
+/** ALT VERSION **/
+form.alt fieldset {
+    background: #eef;
+}
+form.alt legend {
+    box-shadow: inset 0 0 10px rgba(0,0,0,.3);
+}
+form.alt legend span {
+    margin: -20px -15px;
+}
+
+input{
+font-size: 18px;}
+p{
+font-size: 15px;}
+
+		</style>
+
+	</head>
+	<body>
+
+		<br><br> 
+<h2> Enter your Login details </h2>
+<br><br>
+<center>		<form action="http://localhost/alogin.php" method="POST">
+<fieldset>
+<legend><span>Log in</span></legend>
+<br><br>
+			<b>Username<b>: &nbsp;&nbsp;<input type="textbox" size="15" maxsize="30" name="user" style="width: 160px;height:25px;">
+
+			<br>
+			<br><br>
+
+			Password: &nbsp;&nbsp;<input type="password" size="15" maxsize="30" name="pass" style="width: 160px;height:25px;">
+
+
+			<br>
+			<br><br>
+			<a href="http://localhost/alogin.php"><input action="http://localhost/alogin.php" type="submit" value="Login" name="submit"  action="http://localhost/alogin.php" style="width: 100px;height: 30px;"></a>
+
+			<br><br><p>Not a user yet? &nbsp;&nbsp;<a href="aregister.html">Sign up here</a></p>
+
+
+</fieldset>
+		</form>
+</center>
+	</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+<title>Holiday Packages India, Travel, Honeymoon Packages, India Tourism, Tour Packages, Holidays India, Vacation Package</title>
+<style type="text/css">
+
+.div1{
+border:1px;
+font-family:georgia;
+}
+
+p.inline {
+    display: inline;
+}
+
+body{
+background-image: url("this.jpg");
+}
+
+ fieldset{
+  background: #eee;
+  margin: 0 auto;
+  text-align: center;
+  float: center;
+  width: 450px;
+  height: 420px;
+border:1px solid #999;
+    border-radius:8px;
+    box-shadow:0 0 10px #000;x
+	
+}
+</style>
+
+<script language="javascript" type="text/javascript">
+
+
+
+
+function CompareCity()
+{
+var a =document.getElementById('from').value;
+var b =document.getElementById('to').value;
+if (a == b)
+{ 
+alert('Please Select a valid departure city and arrival city');
+document.getElementById('from').focus();
+return false;
+}
+return true;
+}
+
+
+
+</script>
+
+</head>
+
+
+<body>
+<center>
+
+<h1>International Flights</h1>
+<div class="div1"><a href="international.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp <a href="flight.php">Flights</a> &nbsp;&nbsp;&nbsp;
+</div>
+<br><br>
+ <form action="choose.php" name="admin" method="post">
+  <fieldset>
+
+<b>  <h3>From</h3>
+ Select city:
+&nbsp;&nbsp
+<select id="from" name="from" onchange="CompareCity()" ><option>Bangalore<option>Delhi<option>Bombay<option>Kolkata<option>Chennai<option>Pune
+ </select>
+<h3>To</h3>
+ Select city: 
+&nbsp;&nbsp
+<select id="to" name="to" onchange="CompareCity()"><option>New York<option>London<option>Paris<option>Singapore<option>Amsterdam<option>Sydney
+</select><br/> 
+<br/> 
+
+
+<p>
+&nbsp;&nbsp;&nbsp;<label> <b>DEPARTURE :<b>
+<input type="date" name="depart" id="depart"  > </label>
+ </p>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Departure time :&nbsp;&nbsp;&nbsp;<input type="textbox"" name="dep_time" style="width: 70px;height:15px;"></label>
+<br><br><br> 
+&nbsp;&nbsp;
+<b>Select the number of seats<b> : <input type="textbox" size="15" maxsize="30" name="seats" style="width: 50px;height:15px;">
+<br><br><br>
+<input type="submit" name="submit" value="Search Flights" style="width: 100px;height:30px;">
+</fieldset>
+ </form>
+
+</body>
+</html>
